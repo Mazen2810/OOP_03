@@ -1,4 +1,6 @@
-﻿namespace Demo
+﻿
+using Demo.Operator_Overloading;
+namespace Demo
 {
     internal class Program
     {
@@ -37,6 +39,22 @@
             //Console.WriteLineChar();
             //Console.WriteLineInt();
             //Console.WriteLineBoolean(); 
+            #endregion
+
+            #region Operators Overloading - Binary Operators
+
+            Complex C1 = new Complex() { Real = 2, Imag = 4 };
+            Complex C2 = new Complex() { Real = 2, Imag = 4 };
+
+            Complex C3;
+
+            C3 = C1 + C2;
+
+            // C2 += C1  ===> C2 = C2 + C1
+            Console.WriteLine($"C1 = {C1}");
+            Console.WriteLine($"C1 = {C2}");
+            Console.WriteLine("--------------------------");
+            Console.WriteLine($"C1 = {C3}");
             #endregion
         }
     }
