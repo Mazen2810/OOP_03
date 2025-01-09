@@ -34,7 +34,26 @@ namespace Demo.Operator_Overloading
             };
         }
         #endregion
+        #region Binary Operators
 
+
+        public static Complex operator ++ (Complex C)
+        {
+            return new Complex
+            {
+                Real = (C?.Real ?? 0) + 1,
+                Imag = (C?.Imag ?? 0)
+            };
+        }
+        public static Complex operator --(Complex C)
+        {
+            return new Complex
+            {
+                Real = (C?.Real ?? 0) - 1,
+                Imag = (C?.Imag ?? 0)
+            };
+        }
+        #endregion
 
         public override string ToString()
         {
