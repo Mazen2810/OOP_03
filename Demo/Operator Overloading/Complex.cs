@@ -14,13 +14,13 @@ namespace Demo.Operator_Overloading
         #region Operators Overloading
 
         // Overloading Operator: Must be Non-Private Class Member Function
-        public static Complex operator + (Complex left, Complex right)
+        public static Complex operator +(Complex left, Complex right)
         {
             return new Complex
             {
                 Real = (left?.Real ?? 0) + (right?.Real ?? 0),
                 Imag = (left?.Imag ?? 0) + (right?.Imag ?? 0),
-            }; 
+            };
             // Left?.Real
             // Left != null? Left.Real : null
         }
@@ -37,7 +37,7 @@ namespace Demo.Operator_Overloading
         #region Binary Operators
 
 
-        public static Complex operator ++ (Complex C)
+        public static Complex operator ++(Complex C)
         {
             return new Complex
             {
@@ -52,6 +52,33 @@ namespace Demo.Operator_Overloading
                 Real = (C?.Real ?? 0) - 1,
                 Imag = (C?.Imag ?? 0)
             };
+        }
+        #endregion
+
+        #region Relational Operators
+
+        public static bool operator >(Complex Left, Complex Right)
+        {
+            if (Left?.Real == Right?.Real)
+            {
+                return Left?.Imag > Right?.Imag;
+
+            }
+            else
+                return Left?.Real > Right?.Real;
+
+        }
+
+        public static bool operator < (Complex Left, Complex Right)
+        {
+            if (Left?.Real == Right?.Real)
+            {
+                return Left?.Imag < Right?.Imag;
+
+            }
+            else
+                return Left?.Real < Right?.Real;
+
         }
         #endregion
 
