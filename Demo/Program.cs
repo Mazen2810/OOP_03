@@ -1,6 +1,7 @@
 ﻿
 using Demo.Casting_Operating_Overloading;
 using Demo.Operator_Overloading;
+using Demo.PolyMorphism;
 namespace Demo
 {
     internal class Program
@@ -119,6 +120,28 @@ namespace Demo
             //Console.WriteLine(userViewModel.Email);
             //Console.WriteLine(userViewModel.Password); 
             #endregion
+
+
+            #region Overriding
+
+            /// TypeA typeA = new TypeA(1);
+            /// typeA.A = 11;
+            /// typeA.MyFun01(); // Iam Base [Parent]
+            /// typeA.MyFun02(); // TypeA: A = 11
+
+            /// TypeB typeB = new TypeB(1, 2);
+            /// typeB.A = 11;
+            /// typeB.B = 22;
+            /// typeB.MyFun01(); // I am Derived [Child]
+            /// typeB.MyFun02(); // TypeB: A = {11} , B = {22}
+
+            //TypeA typeA = new TypeB(1, 2);
+            //typeA.A = 11;
+            //typeA.B = 22;
+            //typeA.MyFun01(); // Iam Base [Parent]
+            //typeA.MyFun02(); //  TypeB: A = {11} , B = {2} 
+            #endregion
+
         }
     }
 }
