@@ -3,6 +3,7 @@ using Assignment.Part01_Q1;
 using Assignment.Part01_Q2;
 using Assignment.Part01_Q3;
 using Assignment.Part01_Q4;
+using Assignment.Part01_Q5;
 
 
 namespace Assignment
@@ -45,6 +46,27 @@ namespace Assignment
             //Employee emp = new Manager();
 
             //emp.work();
+
+            #endregion
+
+
+            #region Q5: Create a base class BaseClass with a virtual method DisplayMessage that prints "Message from BaseClass"
+            // Override : it makes Dynamic binding between Parent and child, that bind based on object not reference.
+            // new : it makes a static binding between parent and child,  that bind based on reference not object
+
+            //BaseClass baseClass = new BaseClass();
+            //baseClass.DisplayMessage(); // Message from BaseClass
+
+            //Console.WriteLine("----------------------");
+
+
+            // baseClass = new DerivedClass1();
+            //baseClass.DisplayMessage(); // Message from DerivedClass1
+
+            //Console.WriteLine("----------------------");
+
+            // baseClass = new DerivedClass2();
+            //baseClass.DisplayMessage(); //Message from DerivedClass1 [From the Parent class because the reference doesn't see the new function.]
 
             #endregion
             #endregion
