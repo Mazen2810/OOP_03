@@ -4,6 +4,7 @@ using Assignment.Part01_Q2;
 using Assignment.Part01_Q3;
 using Assignment.Part01_Q4;
 using Assignment.Part01_Q5;
+using Assignment.Part02;
 
 
 namespace Assignment
@@ -69,6 +70,70 @@ namespace Assignment
             //baseClass.DisplayMessage(); //Message from DerivedClass1 [From the Parent class because the reference doesn't see the new function.]
 
             #endregion
+            #endregion
+
+
+            #region Part 02
+
+            #region Q3:Define All Required Constructors to Produce this output:
+            Duration D1 = new Duration(1, 10, 15);
+            //Console.WriteLine(D1.ToString()); // Hours: 1, Minutes :10, Seconds :15
+
+            //Console.WriteLine("----------------------");
+
+            Duration D2 = new Duration(3600);
+            //Console.WriteLine(D2.ToString()); // Hours: 1, Minutes :0, Seconds :0
+
+            //Console.WriteLine("----------------------");
+
+
+            Duration D3 = new Duration(7800);
+            //Console.WriteLine(D3.ToString()); // Hours: 2, Minutes :10, Seconds :0
+            //Console.WriteLine("----------------------");
+
+            Duration D4 = new Duration(666);
+            //Console.WriteLine(D4.ToString()); // Minutes: 11, Seconds: 6 
+            #endregion
+
+            #region Q4: Implement All required Operators overloading to enable this Code
+            //D3 = D1 + D2;
+            //Console.WriteLine(D3);
+
+            //D3 = D1 + 7800;
+            //Console.WriteLine(D3);
+
+            //D3 = 666 + D3;
+            //Console.WriteLine(D3);
+
+            //D3 = ++D1;
+            //Console.WriteLine(D3);
+
+            //D3 = --D2;
+            //Console.WriteLine(D3);
+
+            //D1 = D1 - D2;
+            //Console.WriteLine(D1);
+
+            //bool flag = (D1 > D2);
+            //Console.WriteLine(flag);
+
+            //bool flag = (D1 <= D2);
+            //Console.WriteLine(flag);
+
+
+            //if (D1)
+            //    Console.WriteLine("True");
+            //else
+            //    Console.WriteLine("False");
+
+            //DateTime Obj = (DateTime)D1;
+            //Console.WriteLine(Obj);
+
+
+
+            #endregion
+
+
             #endregion
         }
     }
