@@ -2,6 +2,7 @@
 using Assignment.Part01_Q1;
 using Assignment.Part01_Q2;
 using Assignment.Part01_Q3;
+using Assignment.Part01_Q4;
 
 
 namespace Assignment
@@ -39,6 +40,13 @@ namespace Assignment
 
             #endregion
 
+
+            #region Q4: Create a base class named Employee with method Work those prints "Employee is working"
+            //Employee emp = new Manager();
+
+            //emp.work();
+
+            #endregion
             #endregion
         }
     }
