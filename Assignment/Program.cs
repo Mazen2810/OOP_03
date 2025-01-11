@@ -1,6 +1,7 @@
 ﻿using System.Drawing;
 using Assignment.Part01_Q1;
 using Assignment.Part01_Q2;
+using Assignment.Part01_Q3;
 
 
 namespace Assignment
@@ -27,6 +28,15 @@ namespace Assignment
             //Part01_Q2.Rectangle rec1 = new Part01_Q2.Rectangle();  // Named the path to avoid confusion between system.rectangle and  Part01_Q2.Rectangle 
             //Part01_Q2.Rectangle rec2 = new Part01_Q2.Rectangle(10,20);
             //Part01_Q2.Rectangle rec3 = new Part01_Q2.Rectangle(30);
+            #endregion
+
+            #region Q3: Define a class Complex Number that represents a complex number with real and imaginary parts.
+            //Complex C1 = new Complex() { Real = 4 , Imag = 6};
+            //Complex C2 = new Complex() { Real = 6, Imag = 2 };
+
+            //Console.WriteLine(C1-C2);
+            //Console.WriteLine(C2+C1);
+
             #endregion
 
             #endregion
